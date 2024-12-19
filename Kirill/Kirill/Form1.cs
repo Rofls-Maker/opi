@@ -7,7 +7,7 @@ public partial class Form1 : Form
 {
     private Game game;
     private int wheelValue;
-    private Random random;
+    private RandomGenerator random;
     private bool isSpinning;
     private int currentRotation;
     private int spinSpeed;
@@ -20,19 +20,18 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         game = new Game();
-        random = new Random();
-        isSpinning = false;
+        random = new RandomGenerator();
         currentRotation = 0;
-        spinSpeed = 20; // начальная скорость
-        spinAngle = 0;
-        spinSteps = 0;
+        spinSpeed = random.GenerateRandomNumber(15,25); // начальная скорость
+        spinAngle = random.GenerateRandomNumber(1,360);
+        spinSteps = random.GenerateRandomNumber(0, 10);
         UpdateUI();
         StartNewRound();
     }
 
     private void UpdateUI()
     {
-        lblHint.Text = $"Подсказка: {game.Hint}";
+        lblHint.Text = $"Подсказка:\n {game.Hint}";
         lblWord.Text = $"Слово: {FormatDisplayedWord(game.DisplayedWord)}";
         UpdatePlayersBalance();
         lblCurrentTurn.Text = $"Ход: {game.Players[game.CurrentPlayerIndex].Name}";
@@ -53,8 +52,8 @@ public partial class Form1 : Form
     private void StartSpin()
     {
         isSpinning = true;
-        spinSpeed = 20;
-        spinSteps = 0;
+        spinSpeed = random.GenerateRandomNumber(15, 25);
+        spinSteps = random.GenerateRandomNumber(0, 10);
         timerSpin.Start();
     }
 
@@ -73,7 +72,7 @@ public partial class Form1 : Form
 
         currentRotation += spinSpeed;
         currentRotation %= 360;
-        pictureBoxWheel.Image = ((Image)global::Kirill.Properties.Resources.wheel).RotateImage(currentRotation);
+        pictureBoxWheel.Image = Kirill.Properties.Resources.wheel.RotateImage(currentRotation);
         spinSteps++;
     }
 
@@ -167,7 +166,19 @@ public partial class Form1 : Form
         if (game.GameEnded)
         {
             MessageBox.Show($"Выиграл {game.Players[game.CurrentPlayerIndex].Name}! Баланс игрока: {game.Players[game.CurrentPlayerIndex].Balance} очков. Ура-ура-ура!");
-            // Здесь можно добавить логику завершения игры или начала новой
+            DialogResult result = MessageBox.Show("Начать новую игру?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                game = new Game();
+                random = new RandomGenerator();
+                UpdateUI();
+                StartNewRound();
+            }
+            else
+            {
+                MessageBox.Show($"Спасибо За игру\nСтатистика за игру:\nОбщее количество заработанных очков{game.Players[0].Balance + game.Players[1].Balance+ game.Players[2].Balance}");
+                this.Close();
+            }
         }
         else
         {
@@ -180,4 +191,5 @@ public partial class Form1 : Form
         await Task.Delay(1000);
         StartSpin();
     }
+
 }

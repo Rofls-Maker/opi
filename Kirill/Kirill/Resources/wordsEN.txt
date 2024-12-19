@@ -1,0 +1,233 @@
+River | A flowing body of water.
+Mountain | A large elevated landform rising significantly above its surroundings.
+Forest | A large area covered chiefly with trees and undergrowth.
+Lake | A large body of water surrounded by land.
+Desert | A dry, barren area of land, often covered with sand.
+Sun | The star at the center of our solar system that provides light and heat.
+Moon | Earth's natural satellite that orbits the planet.
+Star | A luminous celestial body made of gas.
+Planet | A celestial body orbiting a star.
+Galaxy | A massive system of stars, gas, and dust bound together by gravity.
+Comet | A celestial object made of ice and dust that develops a tail when near the sun.
+Astronomy | The scientific study of celestial bodies and the universe.
+Space | The vast, seemingly infinite expanse beyond Earth's atmosphere.
+Meteor | A small body from space that enters Earth's atmosphere and produces a bright trail.
+Nebula | A giant cloud of dust and gas in space, often a star-forming region.
+Ocean | A vast body of saltwater covering a large portion of Earth's surface.
+Waterfall | A place where water flows over a vertical drop.
+Swamp | A wetland area dominated by trees and shrubs.
+Fjord | A deep, narrow, and elongated sea or lake with steep sides.
+Valley | A low area of land between hills or mountains, often with a river running through it.
+Hill | A naturally raised area of land, smaller than a mountain.
+Gorge | A narrow valley between steep cliffs.
+Plateau | An area of flat land elevated above the surrounding area.
+Park | A public area for recreation, often featuring greenery and trees.
+Garden | A piece of land for growing flowers, fruits, or vegetables.
+Field | An open area of land, often used for agriculture.
+Tundra | A cold, treeless region characterized by low-growing vegetation.
+Climate | The long-term average of weather conditions in a particular area.
+Snow | Frozen precipitation that falls as white flakes.
+Rain | Liquid precipitation that falls from clouds.
+Wind | The movement of air caused by atmospheric pressure differences.
+Animal | A living organism that can move and consume organic material.
+Plant | A living organism that performs photosynthesis to produce energy.
+Bird | A warm-blooded vertebrate with feathers and wings.
+Fish | A cold-blooded aquatic vertebrate with gills and fins.
+Insect | A small invertebrate animal with six legs and three body segments.
+Human | A rational being with advanced cognitive abilities.
+Society | A community of individuals living together and interacting.
+Culture | The beliefs, customs, and arts of a particular society.
+Language | A system of communication used by a particular community.
+Tradition | A custom or belief passed down through generations.
+Art | The expression of human creativity through various forms.
+Science | A systematic enterprise that builds and organizes knowledge.
+Technology | The application of scientific knowledge for practical purposes.
+Economics | The study of production, distribution, and consumption of goods.
+Politics | The activities associated with governance and decision-making.
+Book | A written or printed work consisting of pages bound together.
+Film | A sequence of images creating a moving picture.
+Music | The art of sound in time, typically involving melody and rhythm.
+Theater | A form of art involving performances in front of an audience.
+Poetry | A literary genre that uses rhythmic and metaphorical language.
+Sport | A physical activity involving competition or teamwork.
+Game | An activity governed by rules, often for entertainment.
+Contest | A competition where participants strive for victory.
+Team | A group of individuals working together towards a common goal.
+Training | The process of learning skills through practice.
+Health | The state of physical and mental well-being.
+Medicine | The science of diagnosing and treating illness.
+Nutrition | The process of obtaining and utilizing food for health.
+Fitness | The condition of being physically fit and healthy.
+Yoga | A discipline involving physical postures and meditation for well-being.
+Transportation | The movement of people or goods from one place to another.
+Car | A motor vehicle with wheels used for transportation.
+Train | A series of connected vehicles running on tracks.
+Airplane | A powered flying vehicle with wings.
+Ship | A large vessel for traveling on water.
+City | A large and densely populated urban area.
+Village | A small community in a rural area.
+Country | A distinct territorial body or political entity.
+Continent | A large continuous mass of land conventionally regarded as a collective region.
+Island | A piece of land surrounded by water.
+Tourism | The practice of traveling for pleasure.
+Culinary | Relating to cooking or the kitchen.
+Family | A group of individuals related by blood or marriage.
+Friendship | A mutual bond between individuals based on affection and trust.
+Love | An intense feeling of deep affection.
+Community | A group of people living in the same area or sharing common interests.
+Support | Assistance or help provided to someone in need.
+Research | A systematic investigation to establish facts.
+Experiment | A scientific procedure to test a hypothesis.
+Theory | A well-substantiated explanation of an aspect of the natural world.
+Phenomenon | An observable event or occurrence.
+Ecology | The study of interactions between organisms and their environment.
+Biodiversity | The variety of life in a particular habitat or ecosystem.
+Sustainable Development | Development that meets present needs without compromising future generations.
+Environmental Protection | Efforts to safeguard the natural environment.
+Innovation | The introduction of new ideas or methods.
+Cybernetics | The science of communication and control in living organisms and machines.
+Internet | A global network connecting millions of private, public, academic, business, and government networks.
+Social Networks | Platforms for users to create and share content or to participate in social networking.
+Reading | The process of interpreting written language.
+Writing | The act of composing text for communication.
+Literature | Written works, especially those considered of superior or lasting artistic merit.
+History | The study of past events.
+Philosophy | The study of fundamental questions about existence and knowledge.
+Morality | Principles concerning the distinction between right and wrong behavior.
+Ethics | The study of moral values and rules.
+Duty | A moral or legal obligation.
+Freedom | The power or right to act, speak, or think as one wants.
+Justice | The concept of moral rightness based on ethics, rationality, law, natural law, fairness, and equity.
+Tolerance | The ability to accept and respect different views or behaviors.
+Solidarity | Unity or agreement of feeling or action among individuals with a common interest.
+Mutual Aid | A voluntary reciprocal exchange of resources and services.
+Kindness | The quality of being friendly, generous, and considerate.
+Compassion | Sympathetic pity and concern for the sufferings of others.
+Travel | The act of moving from one place to another.
+Expedition | A journey undertaken for a specific purpose, often exploration or research.
+Adventure | An unusual and exciting experience or activity.
+Tour | A journey for pleasure in which several places are visited.
+Vacation | A period spent away from home or business in travel or recreation.
+Recipe | A set of instructions for preparing a particular dish.
+Dessert | A sweet course typically served at the end of a meal.
+Snack | A small amount of food eaten between meals.
+Drink | A liquid that can be consumed.
+Entertainment | Activities designed to provide enjoyment or amusement.
+Creativity | The ability to produce new and original ideas or things.
+Idea | A thought or suggestion as to a possible course of action.
+Project | A planned undertaking that has a specific goal.
+Concept | An abstract idea or a general notion.
+Inspiration | The process of being mentally stimulated to do or feel something.
+Hypothesis | A proposed explanation made on the basis of limited evidence.
+Solar System | The collection of eight planets and their moons in orbit around the sun.
+Nature | The phenomena of the physical world collectively.
+Landscape | The visible features of an area of land, including physical elements.
+Ecosystem | A biological community of interacting organisms and their environment.
+Biosphere | The global sum of all ecosystems; the zone of life on Earth.
+Painting | The practice of applying pigment to a surface to create an artwork.
+Sculpture | The art of creating three-dimensional works by shaping materials.
+Cinema | The art of making and showing films.
+Prose | Written or spoken language in its ordinary form without metrical structure.
+Fiction | Literature in the form of prose that describes imaginary events and people.
+Information Technology | The use of computers to store, retrieve, and send information.
+Automation | The use of technology to perform tasks without human intervention.
+Artificial Intelligence | The simulation of human intelligence processes by machines.
+Education | The process of receiving or giving systematic instruction.
+School | An institution for educating children.
+University | An institution of higher education providing degrees.
+Courses | A series of classes on a particular subject.
+Training | The action of teaching a person or animal a particular skill.
+Knowledge | Information and skills acquired through experience or education.
+Skills | The ability to do something well, typically as a result of training.
+Experience | Practical contact with and observation of facts or events.
+Wisdom | The quality of having experience, knowledge, and good judgment.
+Intuition | The ability to understand something instinctively, without the need for conscious reasoning.
+Communication | The imparting or exchanging of information.
+Dialogue | A conversation between two or more people.
+Debates | A formal discussion on a particular topic where opposing arguments are put forward.
+Presentation | The act of presenting information to an audience.
+Advertising | The activity of producing advertisements to promote products.
+Finance | The management of large sums of money, especially by governments or large companies.
+Budget | An estimate of income and expenditure for a set period.
+Investments | The action or process of investing money for profit.
+Credit | An arrangement to receive goods or services before payment.
+Wellness | The state of being in good health, especially as an actively pursued goal.
+Therapy | Treatment intended to relieve or heal a disorder.
+Beauty | A combination of qualities that pleases the senses or mind.
+Fashion | A popular trend, especially in styles of dress and ornamentation.
+Design | The process of creating a plan or drawing for a product.
+Architecture | The art and practice of designing buildings and other physical structures.
+Engineering | The application of scientific principles to design and build structures.
+Mathematics | The abstract science of number, quantity, and space.
+Physics | The natural science that studies matter, its motion, and behavior.
+Chemistry | The branch of science that studies the composition and properties of substances.
+Biology | The study of living organisms, divided into many specialized fields.
+Geography | The study of places and the relationships between people and their environments.
+History | The study of past events, particularly in human affairs.
+Sociology | The study of the development, structure, and functioning of human society.
+Psychology | The scientific study of the human mind and its functions.
+Anthropology | The study of humans, human behavior, and societies.
+Linguistics | The scientific study of language and its structure.
+Archaeology | The study of human history through excavation and analysis of artifacts.
+Political Science | The study of politics, government systems, and political behavior.
+Criminology | The study of crime, criminal behavior, and the criminal justice system.
+Econometrics | The application of statistical methods to economic data.
+Demography | The statistical study of populations, including the structure and distribution.
+Marketing | The action or business of promoting and selling products or services.
+Public Relations | The professional maintenance of a favorable public image for a company or organization.
+Journalism | The activity of gathering, assessing, creating, and presenting news and information.
+Photography | The art or practice of taking and processing photographs.
+Graphic Design | The art of combining text and pictures in advertisements, magazines, or books.
+Cinema | The art of making motion pictures.
+Animation | The technique of photographing successive drawings or positions of puppets to create an illusion of movement.
+Musicology | The scholarly study of music.
+Theology | The study of the nature of God and religious belief.
+Philanthropy | The desire to promote the welfare of others, typically through the donation of money.
+Volunteering | The act of offering one's time and services for free.
+Activism | The policy or action of using vigorous campaigning to bring about political or social change.
+Advocacy | The act of pleading for, supporting, or recommending a cause or course of action.
+Civil Rights | The rights of citizens to political and social freedom and equality.
+Human Rights | The basic rights and freedoms to which all humans are entitled.
+Environmentalism | Concern for the protection of the environment.
+Globalization | The process by which businesses or other organizations develop international influence.
+Urbanization | The process of making an area more urban.
+Migration | The movement of people from one place to another.
+Refugee | A person who has been forced to leave their country to escape war or persecution.
+Immigrant | A person who comes to live permanently in a foreign country.
+Lifestyle | The way in which a person or group lives.
+Well-being | The state of being comfortable, healthy, or happy.
+Mindfulness | The quality of being conscious or aware of something.
+Meditation | A practice where an individual uses a technique to focus the mind and achieve a mentally clear and emotionally calm state.
+Creativity | The ability to produce original ideas and solutions.
+Innovation | The introduction of new ideas, methods, or products.
+Entrepreneurship | The process of starting and running a new business.
+Startup | A newly established business.
+Investment | The action of putting money into something to earn a profit.
+Profit | The financial gain made in a transaction.
+Loss | The amount lost in a business transaction.
+Market | A regular gathering of people for the purchase and sale of goods.
+Supply | The amount of a good or service available for purchase.
+Demand | The desire of consumers to purchase goods and services.
+Consumer | A person who purchases goods and services for personal use.
+Product | An item or service that is manufactured or refined for sale.
+Service | An act of helpful activity or assistance.
+Brand | A name, term, design, or symbol that identifies a seller's goods.
+Advertising | The activity of producing advertisements to promote a product.
+Promotion | Activities to increase the visibility and awareness of a product.
+Sales | The exchange of a commodity for money.
+Retail | The sale of goods to the public in relatively small quantities.
+Wholesale | The selling of goods in large quantities at lower prices.
+E-commerce | Commercial transactions conducted electronically on the internet.
+Website | A collection of related web pages located under a single domain name.
+Blog | A regularly updated website or web page, typically run by an individual.
+Social Media | Websites and applications that enable users to create and share content.
+Content | Information and experiences that are directed toward an end-user or audience.
+SEO | The process of enhancing a website's visibility on search engines.
+Analytics | The systematic computational analysis of data or statistics.
+Data | Facts and statistics collected for reference or analysis.
+Software | The programs and other operating information used by a computer.
+Hardware | The physical components of a computer system.
+Network | A group of interconnected computers that share resources.
+Cybersecurity | The practice of protecting systems, networks, and programs from digital attacks.
+Malware | Software specifically designed to disrupt, damage, or gain unauthorized access to computer systems.
+Phishing | A type of cyber attack that tricks individuals into providing sensitive information.

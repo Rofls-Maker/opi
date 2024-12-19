@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 public class Game
 {
@@ -9,9 +10,11 @@ public class Game
     private List<Word> words;
     private Word selectedWord;
     private char[] displayedWord;
-    private Random random;
+    RandomGenerator random;
     private bool gameEnded;
     private Wheel wheel;
+    private string resourceNameRU = "Kirill.Resources.wordsRU.txt";
+    private string resourceNameEN = "Kirill.Resources.wordsEN.txt";
 
     public Game()
     {
@@ -22,7 +25,7 @@ public class Game
             new Player("3 игрок")
         };
         currentPlayerIndex = 0;
-        random = new Random();
+        random = new RandomGenerator();
         LoadWords();
         SelectRandomWord();
         wheel = new Wheel();
@@ -32,31 +35,48 @@ public class Game
     private void LoadWords()
     {
         words = new List<Word>();
-        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "words.txt");
-        if (!File.Exists(filePath))
-        {
-            throw new FileNotFoundException("Файл слов не найден.");
-        }
 
-        var lines = File.ReadAllLines(filePath);
-        foreach (var line in lines)
+        var assembly = Assembly.GetExecutingAssembly();
+        var resourceName = resourceNameRU;
+
+        /*var resourceNames = assembly.GetManifestResourceNames(); //только для теста имеющихся ресов (для дебага)
+        Console.WriteLine("Доступные ресурсы:");
+        foreach (var name in resourceNames)
         {
-            var parts = line.Split('|');
-            if (parts.Length == 2)
+           MessageBox.Show(name);
+        }*/
+
+        using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+        {
+            if (stream == null)
             {
-                words.Add(new Word(parts[0].Trim(), parts[1].Trim()));
+                throw new Exception($"Ресурс '{resourceName}' не найден.");
+            }
+
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string content = reader.ReadToEnd();
+                var lines = content.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var line in lines)
+                {
+                    var parts = line.Split('|');
+                    if (parts.Length == 2)
+                    {
+                        words.Add(new Word(parts[0].Trim(), parts[1].Trim()));
+                    }
+                }
             }
         }
 
         if (words.Count == 0)
         {
-            throw new Exception("Нет слов в файле слов.");
+            throw new Exception("Нет слов в ресурсах.");
         }
     }
 
     private void SelectRandomWord()
     {
-        int index = random.Next(words.Count);
+        int index = random.GenerateRandomNumber(1, words.Count);
         selectedWord = words[index];
         displayedWord = new string('_', selectedWord.Text.Length).ToCharArray();
     }
@@ -115,6 +135,4 @@ public class Game
     {
         currentPlayerIndex = (currentPlayerIndex + 1) % players.Count;
     }
-
-    public string GetSelectedWord() => selectedWord.Text;
 }

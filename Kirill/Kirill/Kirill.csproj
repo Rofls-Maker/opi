@@ -57,6 +57,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random.cs" />
     <Compile Include="Wheel.cs" />
     <Compile Include="Word.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -87,6 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\wordsEN.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\wordsRU.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

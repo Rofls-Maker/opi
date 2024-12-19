@@ -69,5 +69,41 @@ namespace Kirill.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на River | A flowing body of water.
+        ///Mountain | A large elevated landform rising significantly above its surroundings.
+        ///Forest | A large area covered chiefly with trees and undergrowth.
+        ///Lake | A large body of water surrounded by land.
+        ///Desert | A dry, barren area of land, often covered with sand.
+        ///Sun | The star at the center of our solar system that provides light and heat.
+        ///Moon | Earth&apos;s natural satellite that orbits the planet.
+        ///Star | A luminous celestial body made of gas.
+        ///Planet | A celestial body orbi [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string wordsEN {
+            get {
+                return ResourceManager.GetString("wordsEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Река|Вода течет в этом объекте.
+        ///Гора|Высокий возвышенный участок земной коры.
+        ///Лес|Большая площадь земли, покрытая деревьями.
+        ///Озеро|Водоем, меньший по размеру, чем море.
+        ///Пустыня|Сухая, обширная территория.
+        ///Солнце|Звезда, вокруг которой вращается Земля.
+        ///Луна|Естественный спутник Земли.
+        ///Звезда|Светящееся небесное тело, состоящее из газа.
+        ///Планета|Космическое тело, вращающееся вокруг звезды.
+        ///Галактика|Массированная система звезд, газа и пыли.
+        ///Комета|Космическое тело с хвостом, состоящее из льда и пыли. [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string wordsRU {
+            get {
+                return ResourceManager.GetString("wordsRU", resourceCulture);
+            }
+        }
     }
 }
