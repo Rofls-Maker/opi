@@ -8,7 +8,6 @@ public partial class Form1 : Form
     private Game game;
     private int wheelValue;
     private RandomGenerator random;
-    private bool isSpinning;
     private int currentRotation;
     private int spinSpeed;
     private int spinSteps;
@@ -22,20 +21,45 @@ public partial class Form1 : Form
         game = new Game();
         random = new RandomGenerator();
         currentRotation = 0;
+        // параметры которые отвечают за барабанчик 
         spinSpeed = random.GenerateRandomNumber(15,25);
         stepsMax = random.GenerateRandomNumber(30, 60);
         spinSteps = random.GenerateRandomNumber(0, 10);
-        UpdateUI();
-        StartNewRound();
+        chengeVisability(false);
+        //
+    }
+
+    private void chengeVisability(bool chenge)
+    {
+
+        lblHint.Visible = chenge;
+        lblWord.Visible = chenge;
+        grpPlayers.Visible = chenge;
+        lblCurrentTurn.Visible = chenge;
+        btnEnterLetter.Visible = chenge;
+        txtLetter.Visible = chenge;
+        pictureBoxWheel.Visible = chenge;
+        label1.Visible = chenge;
     }
 
     private void UpdateUI()
     {
-        lblHint.Text = $"Подсказка:\n {game.Hint}";
+        grpPlayers.Text = "Баланс игроков:";
+        //подсказка 
+       // lblHint.BorderStyle = BorderStyle.FixedSingle;
+        lblHint.AutoSize = true;
+        lblHint.MaximumSize = new Size(540, 100);
+        //загаданное слово
+        //lblWord.BorderStyle = BorderStyle.FixedSingle;
+        lblWord.AutoSize = true;
+        lblWord.MaximumSize = new Size(400, 100);
+
+        lblHint.Text = $"Подсказка: {game.Hint}";
         lblWord.Text = $"Слово: {FormatDisplayedWord(game.DisplayedWord)}";
         UpdatePlayersBalance();
         lblCurrentTurn.Text = $"Ход: {game.Players[game.CurrentPlayerIndex].Name}";
     }
+
 
     private string FormatDisplayedWord(string word)
     {
@@ -52,7 +76,6 @@ public partial class Form1 : Form
     private void StartSpin()
     {
         btnEnterLetter.Enabled = false;
-        isSpinning = true;
         spinSpeed = random.GenerateRandomNumber(15, 25);
         spinSteps = random.GenerateRandomNumber(0, 10);
         timerSpin.Start();
@@ -63,7 +86,6 @@ public partial class Form1 : Form
         if (spinSteps >= stepsMax)
         {
             timerSpin.Stop();
-            isSpinning = false;
             DetermineSpinResult();
             return;
         }
@@ -80,11 +102,11 @@ public partial class Form1 : Form
     private void DetermineSpinResult()
     {
         // непосредственно сектор 
-        int sectorCount = game.Wheel.Sectors.Count;
+        int sectorCount = game.Wheel.SectorsRu.Count;
         double sectorAngle = 360.0 / sectorCount;
         double angle = (360 - currentRotation + sectorAngle / 2) % 360;
         int sectorIndex = (int)(angle / sectorAngle) % sectorCount;
-        string result = game.Wheel.Sectors[sectorIndex];
+        string result = game.Wheel.SectorsRu[sectorIndex];
         lastSpinResult = result;
 
         btnEnterLetter.Enabled = true;
@@ -178,7 +200,7 @@ public partial class Form1 : Form
             }
             else
             {
-                MessageBox.Show($"Спасибо За игру\nСтатистика за игру:\nОбщее количество заработанных очков{game.Players[0].Balance + game.Players[1].Balance+ game.Players[2].Balance}");
+                MessageBox.Show($"Спасибо За игру");
                 this.Close();
             }
         }
@@ -192,6 +214,27 @@ public partial class Form1 : Form
     {
         await Task.Delay(1000);
         StartSpin();
+    }
+
+    private void txtLetter_KeyPress(object sender, KeyPressEventArgs e)
+    {
+        if (!char.IsControl(e.KeyChar) && !checkKeyPress(e.KeyChar))
+        {
+            e.Handled = true;
+        }
+    }
+
+    private bool checkKeyPress(char c) 
+    {
+        return ((c >= 'А' && c <= 'я') || c == 'Ё' || c == 'ё' || (c >='1' && c <='9'));
+    }
+
+    private void start_game_Click(object sender, EventArgs e)
+    {
+        chengeVisability(true);
+        UpdateUI();
+        StartNewRound();
+        start_game.Visible = false;
     }
 
 }

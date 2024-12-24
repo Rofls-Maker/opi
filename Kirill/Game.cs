@@ -14,7 +14,6 @@ public class Game
     private bool gameEnded;
     private Wheel wheel;
     private string resourceNameRU = "Kirill.Resources.wordsRU.txt";
-    private string resourceNameEN = "Kirill.Resources.wordsEN.txt";
 
     public Game()
     {

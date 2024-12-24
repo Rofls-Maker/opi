@@ -43,6 +43,7 @@ partial class Form1 : Form
             this.pictureBoxWheel = new System.Windows.Forms.PictureBox();
             this.timerSpin = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.start_game = new System.Windows.Forms.Button();
             this.grpPlayers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWheel)).BeginInit();
             this.SuspendLayout();
@@ -50,22 +51,22 @@ partial class Form1 : Form
             // lblHint
             // 
             this.lblHint.AutoSize = true;
-            this.lblHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.lblHint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblHint.ForeColor = System.Drawing.Color.Black;
             this.lblHint.Location = new System.Drawing.Point(12, 15);
             this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(149, 29);
+            this.lblHint.Size = new System.Drawing.Size(172, 32);
             this.lblHint.TabIndex = 0;
             this.lblHint.Text = "Подсказка:";
             // 
             // lblWord
             // 
             this.lblWord.AutoSize = true;
-            this.lblWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lblWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWord.ForeColor = System.Drawing.Color.Black;
-            this.lblWord.Location = new System.Drawing.Point(12, 100);
+            this.lblWord.Location = new System.Drawing.Point(12, 140);
             this.lblWord.Name = "lblWord";
-            this.lblWord.Size = new System.Drawing.Size(132, 39);
+            this.lblWord.Size = new System.Drawing.Size(111, 32);
             this.lblWord.TabIndex = 1;
             this.lblWord.Text = "Слово:";
             // 
@@ -76,7 +77,7 @@ partial class Form1 : Form
             this.grpPlayers.Controls.Add(this.lblPlayer1);
             this.grpPlayers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grpPlayers.ForeColor = System.Drawing.Color.Black;
-            this.grpPlayers.Location = new System.Drawing.Point(17, 163);
+            this.grpPlayers.Location = new System.Drawing.Point(17, 239);
             this.grpPlayers.Name = "grpPlayers";
             this.grpPlayers.Size = new System.Drawing.Size(250, 130);
             this.grpPlayers.TabIndex = 2;
@@ -136,13 +137,14 @@ partial class Form1 : Form
             this.txtLetter.Name = "txtLetter";
             this.txtLetter.Size = new System.Drawing.Size(180, 45);
             this.txtLetter.TabIndex = 5;
+            this.txtLetter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLetter_KeyPress);
             // 
             // lblCurrentTurn
             // 
             this.lblCurrentTurn.AutoSize = true;
             this.lblCurrentTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblCurrentTurn.ForeColor = System.Drawing.Color.Black;
-            this.lblCurrentTurn.Location = new System.Drawing.Point(11, 309);
+            this.lblCurrentTurn.Location = new System.Drawing.Point(12, 375);
             this.lblCurrentTurn.Name = "lblCurrentTurn";
             this.lblCurrentTurn.Size = new System.Drawing.Size(59, 25);
             this.lblCurrentTurn.TabIndex = 6;
@@ -165,17 +167,29 @@ partial class Form1 : Form
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(530, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(543, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 91);
+            this.label1.Size = new System.Drawing.Size(45, 51);
             this.label1.TabIndex = 8;
             this.label1.Text = "↓";
+            // 
+            // start_game
+            // 
+            this.start_game.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.start_game.Location = new System.Drawing.Point(230, 200);
+            this.start_game.Name = "start_game";
+            this.start_game.Size = new System.Drawing.Size(300, 100);
+            this.start_game.TabIndex = 9;
+            this.start_game.Text = "начать игру";
+            this.start_game.UseVisualStyleBackColor = true;
+            this.start_game.Click += new System.EventHandler(this.start_game_Click);
             // 
             // Form1
             // 
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(742, 553);
+            this.Controls.Add(this.start_game);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxWheel);
             this.Controls.Add(this.lblCurrentTurn);
@@ -202,4 +216,5 @@ partial class Form1 : Form
     }
 
     private Label label1;
+    private Button start_game;
 }

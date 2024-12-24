@@ -87,9 +87,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\wordsEN.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\wordsRU.txt" />
   </ItemGroup>
   <ItemGroup>
