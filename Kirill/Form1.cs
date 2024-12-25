@@ -29,17 +29,17 @@ public partial class Form1 : Form
         //
     }
 
-    private void chengeVisability(bool chenge)
+    private void chengeVisability(bool change)
     {
 
-        lblHint.Visible = chenge;
-        lblWord.Visible = chenge;
-        grpPlayers.Visible = chenge;
-        lblCurrentTurn.Visible = chenge;
-        btnEnterLetter.Visible = chenge;
-        txtLetter.Visible = chenge;
-        pictureBoxWheel.Visible = chenge;
-        label1.Visible = chenge;
+        lblHint.Visible = change;
+        lblWord.Visible = change;
+        grpPlayers.Visible = change;
+        lblCurrentTurn.Visible = change;
+        btnEnterLetter.Visible = change;
+        txtLetter.Visible = change;
+        pictureBoxWheel.Visible = change;
+        label1.Visible = change;
     }
 
     private void UpdateUI()
