@@ -140,7 +140,7 @@ public partial class Form1 : Form
         {
                 if (int.TryParse(input, out int position))
                 {
-                    if (game.RevealLetterByPosition(position, out char revealedLetter))
+                    if (game.RevealLetterByPosition(position, out char revealedLetter) && game.RevealLetter(revealedLetter, out int count))
                     {
                         MessageBox.Show($"Буква на позиции {position}: {revealedLetter}");
                         game.Players[game.CurrentPlayerIndex].Balance += 100;
