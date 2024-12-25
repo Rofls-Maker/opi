@@ -30,7 +30,6 @@ partial class Form1 : Form
     private void InitializeComponent()
     {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblHint = new System.Windows.Forms.Label();
             this.lblWord = new System.Windows.Forms.Label();
             this.grpPlayers = new System.Windows.Forms.GroupBox();
@@ -152,7 +151,7 @@ partial class Form1 : Form
             // 
             // pictureBoxWheel
             // 
-            this.pictureBoxWheel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxWheel.Image")));
+            this.pictureBoxWheel.Image = global::Kirill.Properties.Resources.wheel;
             this.pictureBoxWheel.Location = new System.Drawing.Point(410, 100);
             this.pictureBoxWheel.Name = "pictureBoxWheel";
             this.pictureBoxWheel.Size = new System.Drawing.Size(300, 300);
