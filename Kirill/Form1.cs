@@ -138,24 +138,31 @@ public partial class Form1 : Form
                 txtLetter.Clear();
         if (lastSpinResult == "+")
         {
-                if (int.TryParse(input, out int position))
+            if (int.TryParse(input, out int position))
+            {
+                if (game.RevealLetterByPosition(position, out char revealedLetter))
                 {
-                    if (game.RevealLetterByPosition(position, out char revealedLetter) && game.RevealLetter(revealedLetter, out int count))
+                    try
                     {
-                        MessageBox.Show($"Буква на позиции {position}: {revealedLetter}");
-                        game.Players[game.CurrentPlayerIndex].Balance += 100;
+                        game.RevealLetter(revealedLetter, out int count);
                     }
-                    else
-                    {
-                        MessageBox.Show("Невозможно открыть эту букву. Возможно, она уже открыта или позиция неверна.");
-                    return;
-                }
+                    catch
+                    { };
+
+                    MessageBox.Show($"Буква на позиции {position}: {revealedLetter}");
+                    game.Players[game.CurrentPlayerIndex].Balance += 100;
                 }
                 else
                 {
-                    MessageBox.Show("Введите корректный номер буквы.");
-                return;
+                    MessageBox.Show("Невозможно открыть эту букву. Возможно, она уже открыта или позиция неверна.");
+                    return;
                 }
+            }
+            else
+            {
+                MessageBox.Show("Введите корректный номер буквы.");
+                return;
+            }
         }
         else if (int.TryParse(lastSpinResult, out value))
         {
@@ -226,7 +233,7 @@ public partial class Form1 : Form
 
     private bool checkKeyPress(char c) 
     {
-        return ((c >= 'А' && c <= 'я') || c == 'Ё' || c == 'ё' || (c >='1' && c <='9'));
+        return ((c >= 'А' && c <= 'я') || c == 'Ё' || c == 'ё' || (c >='0' && c <='9'));
     }
 
     private void start_game_Click(object sender, EventArgs e)

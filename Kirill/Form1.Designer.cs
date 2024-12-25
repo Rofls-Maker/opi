@@ -151,7 +151,6 @@ partial class Form1 : Form
             // 
             // pictureBoxWheel
             // 
-            this.pictureBoxWheel.Image = global::Kirill.Properties.Resources.wheel;
             this.pictureBoxWheel.Location = new System.Drawing.Point(410, 100);
             this.pictureBoxWheel.Name = "pictureBoxWheel";
             this.pictureBoxWheel.Size = new System.Drawing.Size(300, 300);
