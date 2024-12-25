@@ -25,11 +25,11 @@ public partial class Form1 : Form
         spinSpeed = random.GenerateRandomNumber(15,25);
         stepsMax = random.GenerateRandomNumber(30, 60);
         spinSteps = random.GenerateRandomNumber(0, 10);
-        chengeVisability(false);
+        changeVisability(false);
         //
     }
 
-    private void chengeVisability(bool change)
+    private void changeVisability(bool change)
     {
 
         lblHint.Visible = change;
@@ -231,7 +231,7 @@ public partial class Form1 : Form
 
     private void start_game_Click(object sender, EventArgs e)
     {
-        chengeVisability(true);
+        changeVisability(true);
         UpdateUI();
         StartNewRound();
         start_game.Visible = false;
