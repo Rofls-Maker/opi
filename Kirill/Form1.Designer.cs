@@ -30,6 +30,7 @@ partial class Form1 : Form
     private void InitializeComponent()
     {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblHint = new System.Windows.Forms.Label();
             this.lblWord = new System.Windows.Forms.Label();
             this.grpPlayers = new System.Windows.Forms.GroupBox();
@@ -151,6 +152,7 @@ partial class Form1 : Form
             // 
             // pictureBoxWheel
             // 
+            this.pictureBoxWheel.Image = global::Kirill.Properties.Resources.wheel;
             this.pictureBoxWheel.Location = new System.Drawing.Point(410, 100);
             this.pictureBoxWheel.Name = "pictureBoxWheel";
             this.pictureBoxWheel.Size = new System.Drawing.Size(300, 300);
@@ -197,12 +199,12 @@ partial class Form1 : Form
             this.Controls.Add(this.lblWord);
             this.Controls.Add(this.lblHint);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(760, 600);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(760, 600);
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поле чудес";
             this.grpPlayers.ResumeLayout(false);

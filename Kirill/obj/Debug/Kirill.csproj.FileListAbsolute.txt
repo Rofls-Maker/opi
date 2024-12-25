@@ -1,10 +1,10 @@
-D:\coding\опи\Kirill\Kirill\bin\Debug\Kirill.exe.config
-D:\coding\опи\Kirill\Kirill\bin\Debug\Kirill.exe
-D:\coding\опи\Kirill\Kirill\bin\Debug\Kirill.pdb
 D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.csproj.AssemblyReference.cache
 D:\coding\опи\Kirill\Kirill\obj\Debug\Form1.resources
 D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.Properties.Resources.resources
 D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.csproj.GenerateResource.cache
 D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.csproj.CoreCompileInputs.cache
-D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.exe
-D:\coding\опи\Kirill\Kirill\obj\Debug\Kirill.pdb
+D:\coding\опи\Kirill\Kirill\bin\Debug\PoleChudes.exe.config
+D:\coding\опи\Kirill\Kirill\bin\Debug\PoleChudes.exe
+D:\coding\опи\Kirill\Kirill\bin\Debug\PoleChudes.pdb
+D:\coding\опи\Kirill\Kirill\obj\Debug\PoleChudes.exe
+D:\coding\опи\Kirill\Kirill\obj\Debug\PoleChudes.pdb

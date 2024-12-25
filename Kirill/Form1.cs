@@ -18,6 +18,7 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
+        this.Icon = Kirill.Properties.Resources.image;
         game = new Game();
         random = new RandomGenerator();
         currentRotation = 0;
@@ -76,6 +77,7 @@ public partial class Form1 : Form
     private void StartSpin()
     {
         btnEnterLetter.Enabled = false;
+        txtLetter.Enabled = false;
         spinSpeed = random.GenerateRandomNumber(15, 25);
         spinSteps = random.GenerateRandomNumber(0, 10);
         timerSpin.Start();
@@ -110,6 +112,7 @@ public partial class Form1 : Form
         lastSpinResult = result;
 
         btnEnterLetter.Enabled = true;
+        txtLetter.Enabled = true;
         // отрисовочка 
         if (int.TryParse(result, out int value))
         {
