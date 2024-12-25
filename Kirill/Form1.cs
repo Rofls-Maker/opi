@@ -102,11 +102,11 @@ public partial class Form1 : Form
     private void DetermineSpinResult()
     {
         // непосредственно сектор 
-        int sectorCount = game.Wheel.SectorsRu.Count;
+        int sectorCount = game.Wheel.Sectors.Count;
         double sectorAngle = 360.0 / sectorCount;
         double angle = (360 - currentRotation + sectorAngle / 2) % 360;
         int sectorIndex = (int)(angle / sectorAngle) % sectorCount;
-        string result = game.Wheel.SectorsRu[sectorIndex];
+        string result = game.Wheel.Sectors[sectorIndex];
         lastSpinResult = result;
 
         btnEnterLetter.Enabled = true;
